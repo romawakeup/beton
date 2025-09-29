@@ -35,7 +35,6 @@ body {
     padding: 0 15px;
 }
 
-.header {}
 
 .header__wrapper {
     display: flex;
@@ -134,6 +133,66 @@ body {
 
 .nav-list__link[aria-expanded="true"] .nav-list__arrow {
     transform: rotate(180deg);
+}
+
+/* Выпадающие меню навигации */
+.nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.nav-dropdown__item {
+    margin: 0;
+}
+
+.nav-dropdown__link {
+    display: block;
+    padding: 12px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: background-color 0.2s ease;
+}
+
+.nav-dropdown__link:hover {
+    background-color: #FFBE03;
+    color: #000000;
+}
+
+.nav-dropdown__link:focus {
+    outline: 2px solid #FFBE03;
+    outline-offset: -2px;
+}
+
+/* Показываем выпадающее меню при наведении и когда открыто */
+.nav-list__item:hover .nav-dropdown,
+.nav-list__item:focus-within .nav-dropdown,
+.nav-list__link[aria-expanded="true"] + .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Позиционирование для элементов навигации */
+.nav-list__item {
+    position: relative;
 }
 
 
@@ -2271,9 +2330,6 @@ body {
 }
 
 /* Правая колонка с навигацией */
-.footer__navigation {
-    
-}
 
 .footer__nav {
     display: flex;
@@ -2330,9 +2386,6 @@ body {
     margin-top: 90px;
 }
 
-.footer__bottom-container {
-
-}
 
 .footer__messenger-info {
     display: flex;

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="block-logo">
+                    <a href="/" class="logo">
+                        <img src="images/logo.png" alt="Логотип Бетон Москвич" class="logo__image">
+                    </a>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Боковая панель меню -->
+                <div class="mobile-sidebar" id="mobileSidebar">
+                    <div class="mobile-sidebar__overlay"></div>
+                    <div class="mobile-sidebar__content">
+                        <div class="mobile-sidebar__header">
+                            <button class="mobile-sidebar__close" aria-label="Закрыть меню">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav class="mobile-sidebar__nav" role="navigation">
+                            <ul class="mobile-nav-list" role="menubar">
+                                <li class="mobile-nav-list__item" role="none">
+                                    <a href="#" class="mobile-nav-list__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mobile-nav-list__text">На известняковом</span>
+                                        <span class="mobile-nav-list__arrow" aria-hidden="true">
+                                            <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                        </span>
+                                    </a>
+                                    <ul class="mobile-nav-dropdown" role="menu">
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М100</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М150</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М200</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М250</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М300</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М350</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М400</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-nav-list__item" role="none">
+                                    <a href="#" class="mobile-nav-list__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mobile-nav-list__text">На доломитовом</span>
+                                        <span class="mobile-nav-list__arrow" aria-hidden="true">
+                                            <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                        </span>
+                                    </a>
+                                    <ul class="mobile-nav-dropdown" role="menu">
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М100</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М150</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М200</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М250</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М300</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М350</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М400</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-nav-list__item" role="none">
+                                    <a href="#" class="mobile-nav-list__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mobile-nav-list__text">На гравийном</span>
+                                        <span class="mobile-nav-list__arrow" aria-hidden="true">
+                                            <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                        </span>
+                                    </a>
+                                    <ul class="mobile-nav-dropdown" role="menu">
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="beton-na-graviynom-shchebne.html" class="mobile-nav-dropdown__link" role="menuitem">На гравийном щебне</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="beton-na-graviynom-shchebne.html" class="mobile-nav-dropdown__link" role="menuitem">М150</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="beton-na-graviynom-shchebne.html" class="mobile-nav-dropdown__link" role="menuitem">М200</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М250</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М300</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М350</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М400</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-nav-list__item" role="none">
+                                    <a href="#" class="mobile-nav-list__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mobile-nav-list__text">На гранитном</span>
+                                        <span class="mobile-nav-list__arrow" aria-hidden="true">
+                                            <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                        </span>
+                                    </a>
+                                    <ul class="mobile-nav-dropdown" role="menu">
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М100</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М150</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М200</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М250</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М300</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М350</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">М400</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-nav-list__item" role="none">
+                                    <a href="#" class="mobile-nav-list__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                                        <span class="mobile-nav-list__text">Доставка</span>
+                                        <span class="mobile-nav-list__arrow" aria-hidden="true">
+                                            <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                        </span>
+                                    </a>
+                                    <ul class="mobile-nav-dropdown" role="menu">
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Москва</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Новая Москва</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Московская область</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Красногорск</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Люберцы</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Химки</a>
+                                        </li>
+                                        <li class="mobile-nav-dropdown__item" role="none">
+                                            <a href="#" class="mobile-nav-dropdown__link" role="menuitem">Мытищи</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-nav-list__item mobile-nav-list__item--last" role="none">
+                                    <a href="#" class="mobile-nav-list__link" role="menuitem">
+                                        <span class="mobile-nav-list__text">О компании</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <!-- Контакты в мобильном меню -->
+                        <div class="mobile-sidebar__contacts">
+                            <div class="mobile-contact-info">
+                                <div class="mobile-contact-info__label">
+                                    <span class="mobile-contact-info__text">Контакты</span>
+                                </div>
+                                <div class="mobile-contact-info__email">
+                                    <a href="mailto:info@beton-moscvich.ru" class="mobile-email-link" aria-label="Отправить письмо на info@beton-moscvich.ru">
+                                        <span class="mobile-email-link__text">info@beton-moscvich.ru</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="mobile-phone-button">
+                                <a href="tel:+74991123366" class="mobile-phone-button__link" aria-label="Позвонить по номеру +7 (499) 112-33-66">
+                                    <span class="mobile-phone-button__icon" aria-hidden="true">
+                                        <img src="images/phone-icon.svg" alt="">
+                                    </span>
+                                    <span class="mobile-phone-button__text">+7 (499) 112-33-66</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="header__nav" role="navigation">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-list__item" role="none">
+                            <a href="#" class="nav-list__link" role="menuitem" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="nav-list__text">На известняковом</span>
+                                <span class="nav-list__arrow" aria-hidden="true">
+                                    <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                </span>
+                            </a>
+                            <ul class="nav-dropdown" role="menu">
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М100</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М150</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М200</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М250</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М300</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М350</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М400</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list__item" role="none">
+                            <a href="#" class="nav-list__link" role="menuitem" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="nav-list__text">На доломитовом</span>
+                                <span class="nav-list__arrow" aria-hidden="true">
+                                    <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                </span>
+                            </a>
+                            <ul class="nav-dropdown" role="menu">
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М100</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М150</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М200</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М250</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М300</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М350</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М400</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list__item" role="none">
+                            <a href="#" class="nav-list__link" role="menuitem" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="nav-list__text">На гравийном</span>
+                                <span class="nav-list__arrow" aria-hidden="true">
+                                    <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                </span>
+                            </a>
+                            <ul class="nav-dropdown" role="menu">
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">На гравийном щебне</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М150</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М200</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М250</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М300</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М350</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М400</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list__item" role="none">
+                            <a href="#" class="nav-list__link" role="menuitem" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="nav-list__text">На гранитном</span>
+                                <span class="nav-list__arrow" aria-hidden="true">
+                                    <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                </span>
+                            </a>
+                            <ul class="nav-dropdown" role="menu">
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М100</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М150</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М200</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М250</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М300</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М350</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">М400</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list__item" role="none">
+                            <a href="#" class="nav-list__link" role="menuitem" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="nav-list__text">Доставка</span>
+                                <span class="nav-list__arrow" aria-hidden="true">
+                                    <img src="images/arrow-down.svg" alt="" width="8" height="5">
+                                </span>
+                            </a>
+                            <ul class="nav-dropdown" role="menu">
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Москва</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Новая Москва</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Московская область</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Красногорск</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Люберцы</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Химки</a>
+                                </li>
+                                <li class="nav-dropdown__item" role="none">
+                                    <a href="#" class="nav-dropdown__link" role="menuitem">Мытищи</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-list__item nav-list__item--last" role="none">
+                            <a href="#" class="nav-list__link" role="menuitem">
+                                <span class="nav-list__text">О компании</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__contacts">
+                    <div class="contact-info">
+                        <div class="contact-info__label">
+                            <span class="contact-info__text">Контакты</span>
+                        </div>
+                        <div class="contact-info__email">
+                            <a href="mailto:info@beton-moscvich.ru" class="email-link"
+                                aria-label="Отправить письмо на info@beton-moscvich.ru">
+                                <span class="email-link__text">info@beton-moscvich.ru</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="phone-button">
+                        <a href="tel:+74991123366" class="phone-button__link"
+                            aria-label="Позвонить по номеру +7 (499) 112-33-66">
+                            <span class="phone-button__icon" aria-hidden="true">
+                                <img src="images/phone-icon.svg" alt="">
+                            </span>
+                            <span class="phone-button__text">+7 (499) 112-33-66</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section section--first banner" aria-label="Баннер с предложением бетона">
+            <div class="container">
+                <div class="banner__wrapper">
+                    <div class="banner__content">
+                        <div class="banner__badge">
+                            <p class="banner__badge-text">отгрузка <span>сегодня</span></p>
+                        </div>
+                        <h2 class="banner__title">
+                            <span class="banner__title--yellow">Купить бетон<br></span>
+                            <span class="banner__title--standard">с ближайшего РБУ в день обращения</span>
+                            <span class="banner__title--standard banner__title--bold">по цене от 2690 ₽/м³</span>
+                        </h2>
+                        <p class="banner__description">
+                            Сотрудничаем с физическими и юридическими лицами, а также государственными учреждениями
+                            Москвы и ближайшего Подмосковья (до 50 км от МКАД). Наша производственная сеть включает
+                            около 13 бетонных заводов (РБУ и БСУ), расположенных в столице и Московской области.
+                        </p>
+                        <div class="banner__actions">
+                            <button class="banner__button banner__button--secondary"
+                                aria-label="Получить расчёт сметы на бетон">
+                                <span class="banner__button-text">Расчёт сметы</span>
+                            </button>
+                            <button class="banner__button banner__button--primary"
+                                aria-label="Оставить заявку на покупку бетона">
+                                <span class="banner__button-text">Оставить заявку</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="banner__image-container">
+                        <img src="images/banner-img.png" alt="Бетонное производство Москвич Бетон"
+                            class="banner__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-block section">
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__title">Купить бетон</h2>
+                    <p class="title-block__subtitle">итоговая смета зависит от цены логистики до вашего объекта
+                    </p>
+                </div>
+                <div class="content-block__wrapper">
+                    <div class="content-block__image">
+                        <img src="images/about-company-img.png" class="content-block__img">
+                    </div>
+
+                    <div class="content-block__content">
+                        <div class="content-wrapper">
+                            <div class="content-wrapper__text-block">
+                                <p class="content-wrapper__paragraph">
+                                    Поставщик бетона «Москвич Бетон» предлагает широкий ассортимент товарных бетонов
+                                    и растворов для различных нужд строителей Москвы и ближайшего Подмосковья. Мы
+                                    являемся прямым поставщиком и производителем бетона в ЮВАО города Москвы, и
+                                    удобно расположены в районе ТТК, что снижает издержки на доставку по всему городу.
+                                </p>
+                            </div>
+
+                            <div class="content-wrapper__text-block">
+                                <p class="content-wrapper__paragraph">
+                                    Существуют несколько основных типов смесей, каждая из которых имеет свои
+                                    особенности и применяется для конкретных задач. Наша цель — предложить вам
+                                    качественные бетоны по ГОСТ без посреднических наценок, которые удовлетворят даже
+                                    самые строгие требования и обеспечат прочность и долговечность всех конструкций. Вот
+                                    краткий обзор основных видов продукции:
+                                </p>
+                            </div>
+
+                            <nav class="content-wrapper__nav" aria-label="Виды бетонной продукции">
+                                <ul class="product-list">
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Тяжелый бетон: подходит для несущих конструкций, мостов и фундаментов.
+                                            Высокая прочность и плотность делают его идеальным для создания монолитных и
+                                            прочных элементов.
+                                        </p>
+                                    </li>
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Легкий бетон: с добавлением керамзита или перлита, что обеспечивает ему
+                                            малый
+                                            вес и отличные теплоизоляционные свойства. Используется для строительства
+                                            стен
+                                            и перегородок, особенно в малоэтажном строительстве.
+                                        </p>
+                                    </li>
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Тощий бетон: смесь с пониженным содержанием цемента, предназначенная для
+                                            подготовки основания перед заливкой основного слоя. Такой материал широко
+                                            применяется для дорожного строительства.
+                                        </p>
+                                    </li>
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Бетоны специальные: с добавлением фибры, гидротехнический, жаростойкий,
+                                            полимерный и другие специализированные смеси, созданные для работы в
+                                            экстремальных условиях, таких как гидротехнические сооружения или
+                                            высокотемпературные зоны. Ассортимент строительных бетонов включает в себя
+                                            материал для фундаментов разного типа.
+                                        </p>
+                                    </li>
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Бетонные растворы: цементно-песчаная смесь, пескобетон. В ассортименте также
+                                            специализированные растворы для кладки кирпича, цементное молочко.
+                                        </p>
+                                    </li>
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Индивидуальный бетонный состав: разработка уникальных рецептур с особыми
+                                            свойствами для проектов, когда стандартные варианты не отвечают требованиям.
+                                        </p>
+                                    </li>
+                                    <li class="product-list__item">
+                                        <p class="product-list__text">
+                                            Нерудные материалы (асфальт, песок, щебень).
+                                        </p>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section">
+            <div class="container">
+                <div class="services__container">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <img src="images/icons/services-icon1.png" alt="">
+                        </div>
+                        <h2 class="service-card__title">Бетон по госту</h2>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <img src="images/icons/services-icon2.png" alt="">
+                        </div>
+                        <h2 class="service-card__title">доставка сегодня</h2>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <img src="images/icons/services-icon3.png" alt="">
+                        </div>
+                        <h2 class="service-card__title">опт прайс от 10 м³</h2>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <img src="images/icons/services-icon4.png" alt="">
+                        </div>
+                        <h2 class="service-card__title">отгрузка 24/7</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo" aria-label="Информация о компании и контакты">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__container">
+                    <div class="footer__contacts">
+                        <div class="block-logo block-logo--footer">
+                            <a href="/" class="logo">
+                                <img src="images/logo.png" alt="Логотип Бетон Москвич" class="logo__image">
+                            </a>
+                        </div>
+
+                        <ul class="footer__contact-list" role="list" aria-label="Контактная информация">
+                            <li class="footer__contact-item">
+                                <div class="footer__contact-icon">
+                                    <img src="images/footer-phone.png" alt="" aria-hidden="true">
+                                </div>
+                                <a href="tel:+79637203434" class="footer__contact-text">+7 (963) 720-34-34</a>
+                            </li>
+
+                            <li class="footer__contact-item">
+                                <div class="footer__contact-icon">
+                                    <img src="images/footer-phone.png" alt="" aria-hidden="true">
+                                </div>
+                                <a href="tel:+74991123366" class="footer__contact-text">+7 (499) 112-33-66</a>
+                            </li>
+
+                            <li class="footer__contact-item">
+                                <div class="footer__contact-icon">
+                                    <img src="images/footer-watch.png" alt="" aria-hidden="true">
+                                </div>
+                                <span class="footer__contact-text">Круглосуточно 24х7</span>
+                            </li>
+
+                            <li class="footer__contact-item">
+                                <div class="footer__contact-icon">
+                                    <img src="images/footer-mail.png" alt="" aria-hidden="true">
+                                </div>
+                                <a href="mailto:info@beton-moscvich.ru"
+                                    class="footer__contact-text">info@beton-moscvich.ru</a>
+                            </li>
+
+                            <li class="footer__contact-item">
+                                <div class="footer__contact-icon">
+                                    <img src="images/footer-geo.png" alt="" aria-hidden="true">
+                                </div>
+                                <span class="footer__contact-text">Москва, Автомобильный пр 9 с1</span>
+                            </li>
+                        </ul>
+
+                        <div class="footer__actions">
+                            <button class="footer__button footer__button--primary" type="button"
+                                aria-label="Оставить заявку">
+                                Оставить заявку
+                            </button>
+
+                            <div class="footer__messengers">
+                                <button class="footer__button footer__button--telegram" type="button"
+                                    aria-label="Написать в Telegram">
+                                    Telegram
+                                </button>
+                                <button class="footer__button footer__button--whatsapp" type="button"
+                                    aria-label="Написать в WhatsApp">
+                                    Whatsapp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="footer__navigation">
+                        <nav class="footer__nav" role="navigation" aria-label="Основная навигация">
+                            <div class="footer__nav-column">
+                                <h3 class="footer__nav-title">Бетоны</h3>
+                                <ul class="footer__nav-list" role="list">
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Готовый бетон</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Тощий бетон</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Тяжелые марки</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Жестко
+                                            укатываемые</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">БСЛ на
+                                            керамзите</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">БСГ на гравии</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">БСГ на граните</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">С фибро
+                                            волокном</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Морозостойкий</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="footer__nav-column">
+                                <h3 class="footer__nav-title">Растворы</h3>
+                                <ul class="footer__nav-list" role="list">
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Строительный</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Кладочный</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">ЦПС</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">ЦПР</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Цементное
+                                            молоко</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Асфальт</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Щебень</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Песок</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer__nav-column">
+                                <h3 class="footer__nav-title">Доставка</h3>
+                                <ul class="footer__nav-list" role="list">
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Москва</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Новая Москва</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Московская
+                                            область</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Новомосковский
+                                            АО</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Красногорск</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Люберцы</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Химки</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Мытищи</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Щербинка</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer__nav-column">
+                                <h3 class="footer__nav-title">Компания</h3>
+                                <ul class="footer__nav-list" role="list">
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">О заводе</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">О компании</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Оптом</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Лаборатория</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">ГОСТы и
+                                            сертификаты</a></li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Бетон с АБН</a>
+                                    </li>
+                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Прайс лист</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <div class="footer__bottom">
+                            <div class="footer__bottom-container">
+                                <div class="footer__messenger-info">
+                                    <p class="footer__messenger-title">Пишите в мессенджеры</p>
+                                    <p class="footer__messenger-subtitle">средний ответ 15 сек</p>
+
+                                    <div class="footer__messenger-buttons">
+                                        <button class="footer__messenger-btn footer__messenger-btn--whatsapp"
+                                            type="button" aria-label="Написать в WhatsApp">
+                                            <div class="footer__messenger-icon">
+                                                <img src="images/ws-icon.png" alt="">
+                                            </div>
+                                            <span class="footer__messenger-text">Whatsapp</span>
+                                        </button>
+
+                                        <button class="footer__messenger-btn footer__messenger-btn--telegram"
+                                            type="button" aria-label="Написать в Telegram">
+                                            <div class="footer__messenger-icon">
+                                                <img src="images/tg-icon.png" alt="">
+                                            </div>
+                                            <span class="footer__messenger-text">Telegram</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="footer__company-info">
+                                    <p class="footer__company-text">ООО «ГК Строй Альянс» &nbsp; ИНН 9723062171 &nbsp;
+                                        ОГРН: 1187746739290
+                                        город Москва</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

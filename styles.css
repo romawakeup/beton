@@ -169,12 +169,12 @@ body {
     margin-bottom: 50px;
 }
 
-.logo {
+.block-logo a {
     display: block;
     text-decoration: none;
 }
 
-.logo__image {
+.block-logo img{
     width: 182.5px;
     height: 72px;
     object-fit: contain;
@@ -258,7 +258,7 @@ body {
     outline-offset: 2px;
 }
 
-.nav-list__text {
+.nav-list__link span {
     white-space: nowrap;
     font-family: inherit;
     font-size: inherit;
@@ -365,7 +365,7 @@ body {
     border-right: 1px solid #0D1D2E;
 }
 
-.contact-info__text {
+.contact-info__label li {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -386,7 +386,7 @@ body {
     color: #FFBE03;
 }
 
-.email-link__text {
+.contact-info__email span {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 13.015625px;
@@ -456,7 +456,7 @@ body {
     object-fit: contain;
 }
 
-.phone-button__text {
+.phone-button span {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -538,7 +538,7 @@ body {
     text-align: center;
 }
 
-.service-card__title {
+.service-card h2 {
     color: #000000;
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 700;
@@ -565,7 +565,7 @@ body {
         border: 2px solid #000;
     }
 
-    .service-card__title {
+    .service-card h2 {
         color: #000;
     }
 }
@@ -590,7 +590,7 @@ body {
     align-self: flex-start;
 }
 
-.banner__badge-text {
+.banner__badge div {
     padding: 10px 20px;
     background-color: #DBCCA1;
     border-radius: 5px;
@@ -602,7 +602,7 @@ body {
     text-align: center;
 }
 
-.banner__badge-text span {
+.banner__badge span {
     text-transform: uppercase;
 }
 
@@ -632,7 +632,7 @@ body {
     font-weight: 700;
 }
 
-.banner__description {
+.banner__content p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -726,12 +726,11 @@ body {
     border-radius: 20px;
 }
 
-.banner__image {
+.banner__image-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
-
 }
 
 /* Responsive Design for Banner Section */
@@ -771,7 +770,7 @@ body {
     }
 
     .banner__title,
-    .banner__description {
+    .banner__content p {
         color: #000000;
     }
 
@@ -810,7 +809,7 @@ body {
     flex: none;
 }
 
-.content-block__img {
+.content-block__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -837,7 +836,7 @@ body {
     padding-top: 23.99px;
 }
 
-.content-wrapper__paragraph {
+.content-wrapper__text-block p {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -901,7 +900,7 @@ body {
     flex-direction: column;
 }
 
-.product-list__text {
+.product-list__item p {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -909,11 +908,10 @@ body {
     color: #000000;
     text-align: left;
     margin: 0;
-    margin-top: -0.5px;
     flex: 1;
 }
 
-.product-list__item--last .product-list__text {
+.product-list__item--last .product-list__item p {
     margin-top: 0;
 }
 
@@ -1036,7 +1034,7 @@ body {
     border-right: none;
 }
 
-.price-table__text {
+.price-table__body span {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1102,7 +1100,7 @@ body {
 }
 
 
-.pricing-table__disclaimer-text {
+.pricing-table__disclaimer p {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1113,7 +1111,7 @@ body {
     width: 418px;
 }
 
-.pricing-table__phone {
+.pricing-table__disclaimer a {
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 13px;
@@ -1123,12 +1121,12 @@ body {
     transition: color 0.3s ease;
 }
 
-.pricing-table__phone:hover {
+.pricing-table__disclaimer a:hover {
     color: #FFBE03;
     text-decoration: underline;
 }
 
-.pricing-table__phone:focus {
+.pricing-table__disclaimer a:focus {
     outline: 2px solid #0D1D2E;
     outline-offset: 2px;
     border-radius: 2px;
@@ -1232,7 +1230,7 @@ body {
     color: #000000;
 }
 
-.title-block__title {
+.title-block h2 {
     font-family: Lato, sans-serif;
     font-weight: 700;
     font-size: 49px;
@@ -1240,7 +1238,7 @@ body {
     text-align: left;
 }
 
-.title-block__subtitle {
+.title-block p{
     font-family: Lato, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -1262,7 +1260,7 @@ body {
     gap: 20px;
 }
 
-.info-section__paragraph {
+.info-section__text-content p{
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1306,7 +1304,7 @@ body {
     top: 0;
 }
 
-.info-section__payment-text {
+.info-section__payment-item span {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1321,7 +1319,7 @@ body {
     gap: 20px;
 }
 
-.info-section__delivery-text {
+.info-section__delivery p {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1330,7 +1328,7 @@ body {
     text-align: left;
 }
 
-.info-section__team {
+.info-section__team p{
     background-color: #3E3E3F;
     padding: 0;
     font-family: Verdana, sans-serif;
@@ -1349,7 +1347,7 @@ body {
     color: #FFBF06;
 }
 
-.info-section__service {
+.info-section__service p {
     background-color: #3E3E3F;
     font-family: Verdana, sans-serif;
     font-weight: 400;
@@ -1359,14 +1357,11 @@ body {
     text-align: left;
 }
 
-.info-section__company {
+.info-section__company p{
     display: flex;
     flex-direction: column;
     gap: 0;
     padding: 2px 0;
-}
-
-.info-section__company-text {
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1375,7 +1370,7 @@ body {
     text-align: left;
 }
 
-.info-section__supplier {
+.info-section__supplier p {
     background-color: #3E3E3F;
     font-family: Verdana, sans-serif;
     font-weight: 400;
@@ -1415,7 +1410,7 @@ body {
     outline-offset: 2px;
 }
 
-.info-section__gallery-image {
+.info-section__gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1484,7 +1479,7 @@ body {
     margin-bottom: 16px;
 }
 
-.region-title {
+.region-header h3{
     font-family: Verdana, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -1535,7 +1530,7 @@ body {
     max-width: 245px;
 }
 
-.city-button__text {
+.city-button span{
     font-family: Inter, sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -1606,7 +1601,7 @@ body {
     height: 100%;
 }
 
-.article-card__title {
+.article-card__content h3 {
     font-family: 'Verdana', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1631,7 +1626,7 @@ body {
     background-color: #f5f5f5;
 }
 
-.article-card__image {
+.article-card__image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1639,7 +1634,7 @@ body {
     transition: transform 0.6s ease;
 }
 
-.article-card:hover .article-card__image {
+.article-card:hover .article-card__image-container img {
     transform: scale(1.05);
 }
 
@@ -1688,7 +1683,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
 
     .article-card,
-    .article-card__image,
+    .article-card__image-container img,
     .article-card__button {
         transition: none;
     }
@@ -1697,7 +1692,7 @@ body {
         transform: none;
     }
 
-    .article-card:hover .article-card__image {
+    .article-card:hover .article-card__image-container img {
         transform: none;
     }
 
@@ -1711,7 +1706,7 @@ body {
         border: 2px solid #000000;
     }
 
-    .article-card__title {
+    .article-card__content h3 {
         color: #000000;
     }
 
@@ -1829,7 +1824,7 @@ body {
     height: 343px;
 }
 
-.concrete-card__product-img {
+.concrete-card__image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1843,7 +1838,7 @@ body {
     text-align: center;
 }
 
-.concrete-card__description {
+.concrete-card__content p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 21px;
@@ -1852,7 +1847,7 @@ body {
     color: #00050A;
 }
 
-.concrete-card__description span {
+.concrete-card__content span {
     color: #F2BD27;
 }
 
@@ -2034,7 +2029,7 @@ body {
     min-width: 200px;
 }
 
-.footer__nav-title {
+.footer__nav-column h3 {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -2054,7 +2049,7 @@ body {
     display: flex;
 }
 
-.footer__nav-link {
+.footer__nav-item a {
     font-family: 'Verdana', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -2065,7 +2060,7 @@ body {
     width: 100%;
 }
 
-.footer__nav-link:hover {
+.footer__nav-item a:hover {
     color: #FFBE03;
 }
 
@@ -2280,9 +2275,6 @@ body {
     background-color: #f8f8f8;
 }
 
-.mobile-nav-list__text {
-    flex: 1;
-}
 
 .mobile-nav-list__arrow {
     display: flex;
@@ -2323,7 +2315,7 @@ body {
     border-bottom: none;
 }
 
-.mobile-nav-dropdown__link {
+.mobile-nav-dropdown__item li {
     display: block;
     padding: 15px 20px 15px 40px;
     color: #666666;
@@ -2335,7 +2327,7 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.mobile-nav-dropdown__link:hover {
+.mobile-nav-dropdown__item li:hover {
     background-color: #FFBE03;
     color: #000000;
 }
@@ -2358,7 +2350,7 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.mobile-contact-info__text {
+.mobile-contact-info__label span {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -2379,7 +2371,7 @@ body {
     color: #FFBE03;
 }
 
-.mobile-email-link__text {
+.mobile-email-link span {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -2428,7 +2420,7 @@ body {
     object-fit: contain;
 }
 
-.mobile-phone-button__text {
+.mobile-phone-button__link span {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -2562,7 +2554,7 @@ body.mobile-menu-open {
         padding: 0;
     }
 
-    .service-card__title {
+    .service-card h2 {
         font-size: 20px;
     }
 }
@@ -2598,7 +2590,7 @@ body.mobile-menu-open {
         font-size: 28px;
     }
 
-    .banner__description {
+    .banner__content p {
         max-width: 100%;
         font-size: 13px;
         margin-bottom: 30px;
@@ -2640,13 +2632,13 @@ body.mobile-menu-open {
         height: auto;
     }
 
-    .pricing-table__disclaimer-text {
+    .pricing-table__disclaimer p {
         width: 100%;
         height: auto;
         position: static;
     }
 
-    .pricing-table__phone {
+    .pricing-table__disclaimer a {
         position: static;
         display: inline;
     }
@@ -2733,7 +2725,7 @@ body.mobile-menu-open {
         line-height: 1.2em;
     }
 
-    .banner__description {
+    .banner__content p {
         font-size: 12px;
         margin-bottom: 25px;
     }
@@ -2774,7 +2766,7 @@ body.mobile-menu-open {
         padding: 15px;
     }
 
-    .article-card__title {
+    .article-card__content h3 {
         font-size: 16px;
         height: auto;
         margin-bottom: 10px;
@@ -2863,11 +2855,11 @@ body.mobile-menu-open {
         gap: 10px;
     }
 
-    .title-block__title {
+    .title-block h2{
         font-size: 35px;
     }
 
-    .title-block__subtitle {
+    .title-block p{
         line-height: 1.2;
     }
 
@@ -2956,7 +2948,7 @@ body.mobile-menu-open {
         font-size: 20px;
     }
 
-    .banner__description {
+    .banner__content p {
         font-size: 11px;
     }
 
@@ -2969,7 +2961,7 @@ body.mobile-menu-open {
         padding: 10px;
     }
 
-    .article-card__title {
+    .article-card__content h3{
         font-size: 14px;
     }
 
@@ -2993,7 +2985,7 @@ body.mobile-menu-open {
         padding: 15px 25px;
     }
 
-    .footer__nav-title {
+    .footer__nav-column h3 {
         font-size: 18px;
     }
 

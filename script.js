@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Инициализация всех элементов (скрытие ответов)
     faqItems.forEach(item => {
-        const answer = item.querySelector('.faq__answer');
+        const answer = item.querySelector('p:nth-child(2)');
         const toggle = item.querySelector('span');
 
         answer.style.display = 'none';
@@ -16,18 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function toggleAnswer(clickedItem) {
-        const answer = clickedItem.querySelector('.faq__answer');
+        const answer = clickedItem.querySelector('p:nth-child(2)');
         const toggle = clickedItem.querySelector('span');
-        const question = clickedItem.querySelector('.faq__question');
+        const question = clickedItem.querySelector('p:first-child');
 
         const isOpen = answer.style.display === 'block';
 
         // Закрываем все элементы
         faqItems.forEach(item => {
             if (item !== clickedItem) {
-                const otherAnswer = item.querySelector('.faq__answer');
+                const otherAnswer = item.querySelector('p:nth-child(2)');
                 const otherToggle = item.querySelector('span');
-                const otherQuestion = item.querySelector('.faq__question');
+                const otherQuestion = item.querySelector('p:first-child');
 
                 otherAnswer.style.maxHeight = '0';
                 otherAnswer.style.opacity = '0';
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Назначаем обработчики
     faqItems.forEach(item => {
-        const question = item.querySelector('.faq__question');
+        const question = item.querySelector('p:first-child');
         const toggle = item.querySelector('span');
 
         question.addEventListener('click', () => toggleAnswer(item));

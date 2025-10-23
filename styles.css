@@ -1773,7 +1773,7 @@ body {
     font-weight: 400;
 }
 
-.faq__item .faq__answer {
+.faq__item p:last-child {
     line-height: 24px;
 }
 
@@ -2779,12 +2779,12 @@ body.mobile-menu-open {
         font-size: 16px;
     }
 
-    .faq__question {
+    .faq__item p:first-child {
         font-size: 16px;
         padding-right: 35px;
     }
 
-    .faq__answer {
+    .faq__item p:last-child  {
         font-size: 14px;
     }
 

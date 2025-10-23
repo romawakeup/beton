@@ -1858,6 +1858,53 @@ body {
     overflow-x: auto;
 }
 
+.parameters-card {
+    position: relative;
+    padding: 60px 60px 38px 60px;
+    width: 510px;
+    background-color: #3E3E3F;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.parameters__wrapper {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.parameters__wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.parameters-card__img-container {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+
+.parameters-card__content {
+    color: #fff;
+}
+
+.parameters-card__content p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.parameters-card__content ul {
+    list-style: none;
+}
+
 /* Адаптивность для секции каталога бетона */
 
 /* Footer Section */
@@ -2784,7 +2831,7 @@ body.mobile-menu-open {
         padding-right: 35px;
     }
 
-    .faq__item p:last-child  {
+    .faq__item p:last-child {
         font-size: 14px;
     }
 
@@ -2864,6 +2911,10 @@ body.mobile-menu-open {
 
     .footer__wrapper {
         padding: 30px 15px 40px 15px;
+    }
+
+    .parameters-card {
+        padding: 40px;
     }
 }
 

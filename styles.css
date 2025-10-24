@@ -2549,8 +2549,18 @@ body.mobile-menu-open {
 
 .product__wrapper {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 30px;
     flex-wrap: wrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 5px;
+}
+
+.product__wrapper::-webkit-scrollbar,
+.concrete-catalog__wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .product-card {
@@ -2572,6 +2582,11 @@ body.mobile-menu-open {
     margin-bottom: 36px;
 }
 
+.product-card__img-container img {
+    width: 100%;
+    height: 100%;
+}
+
 .product-card__body p:first-child {
     font-family: Lato;
     font-weight: 700;
@@ -2580,7 +2595,7 @@ body.mobile-menu-open {
     text-align: center;
 }
 
-.product-card__body p:nth-child(2){
+.product-card__body p:nth-child(2) {
     font-family: Lato;
     font-weight: 400;
     font-size: 20px;
@@ -2611,7 +2626,7 @@ body.mobile-menu-open {
 
 .product-card__price p {
     font-family: Lato;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 22px;
     line-height: 25.09px;
     text-align: center;
@@ -2647,6 +2662,7 @@ body.mobile-menu-open {
 .product-card__button:hover img {
     width: 40px;
 }
+
 /* ========================================
    ОБЪЕДИНЕННЫЕ МОБИЛЬНЫЕ СТИЛИ
    ======================================== */

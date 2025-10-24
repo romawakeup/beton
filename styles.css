@@ -2547,6 +2547,106 @@ body.mobile-menu-open {
     /* WebKit браузеры */
 }
 
+.product__wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    padding: 26px 26px 30px 26px;
+    max-width: 370px;
+    box-shadow: 0px 2px 7.3px 3px #00000030;
+
+}
+
+.product-card__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 36px;
+}
+
+.product-card__body p:first-child {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25.09px;
+    text-align: center;
+}
+
+.product-card__body p:nth-child(2){
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.09px;
+    text-align: center;
+}
+
+.product-card__body li {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.product-card__body li::marker {
+    font-size: 18px;
+}
+
+.product-card__footer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__price p {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.09px;
+    text-align: center;
+}
+
+.product-card__price p span {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25.09px;
+    text-align: center;
+}
+
+
+.product-card__button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13px;
+    width: 100px;
+    height: 42px;
+    border-radius: 7px;
+    background-color: #FFBE03CC;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-card__button img {
+    width: 27px;
+    transition: all 0.3s ease;
+}
+
+.product-card__button:hover img {
+    width: 40px;
+}
 /* ========================================
    ОБЪЕДИНЕННЫЕ МОБИЛЬНЫЕ СТИЛИ
    ======================================== */
